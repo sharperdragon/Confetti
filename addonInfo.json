@@ -1,0 +1,7 @@
+{
+  "name": "Confetti Reinforcement",
+  "mod": 1,
+  "desc": "Triggers confetti bursts based on FSRS card conditions and review performance.",
+  "version": "1.1.0",
+  "url": "https://github.com/yourname/confetti-reinforcement"
+}

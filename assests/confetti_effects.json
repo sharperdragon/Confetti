@@ -1,0 +1,23 @@
+{
+    "default": {
+        "particleCount": 150,
+        "spread": 180,
+        "speed": 55,
+        "duration": 150,
+        "decay": 0.8
+    },
+    "high_difficulty": {
+        "particleCount": 200,
+        "spread": 150,
+        "speed": 55,
+        "duration": 1600,
+        "decay": 0.8
+    },
+    "low_retrievability": {
+        "particleCount": 180,
+        "spread": 100,
+        "speed": 55,
+        "duration": 150,
+        "decay": 0.9
+    }
+}
