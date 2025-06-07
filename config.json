@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "play_success_sound": false,
     "success_sound": "/absolute/path/to/your/success_sound.wav",
     "default_origins": [
@@ -55,4 +56,98 @@
             }
         }
     ]
+=======
+  "play_success_sound": true,
+  "success_sound": "/absolute/path/to/your/success_sound.wav",
+  "default_origins": [
+      {
+          "x": 0.1,
+          "y": 1.0
+      },
+      {
+          "x": 0.9,
+          "y": 1.0
+      }
+  ],
+  "default_particleCount": 150,
+  "default_spread": 100,
+  "default_speed": 45,
+  "default_duration": 200,
+  "default_fade": 0.9,
+  "fsrs_properties": {
+      "difficulty": "d",
+      "retrievability": "r",
+      "stability": "s"
+  },
+  "triggers": [
+      {
+          "name": "Low retrievability & enough reps",
+          "conditions": {
+              "prop:r": "< 0.40",
+              "prop:reps": ">= 3"
+          },
+          "pattern": {
+              "particleCount": 150,
+              "spread": 120,
+              "speed": 55,
+              "duration": 220,
+              "fade": 0.85
+          }
+      },
+      {
+          "name": "Review card with high difficulty",
+          "conditions": {
+              "is:review": true,
+              "prop:d": ">= 9.4"
+          },
+          "pattern": {
+              "particleCount": 200,
+              "spread": 150,
+              "speed": 50,
+              "duration": 230,
+              "fade": 0.8
+          }
+      },
+      {
+          "name": "Three consecutive 'again'",
+          "conditions": {
+              "last_n_again": 3
+          },
+          "pattern": {
+              "particleCount": 150,
+              "spread": 100,
+              "speed": 55,
+              "duration": 210,
+              "fade": 0.9
+          }
+      },
+      {
+          "name": "Overdue card with no recent 'again'",
+          "conditions": {
+              "prop:due": "< -15",
+              "last_n_again": 0
+          },
+          "pattern": {
+              "particleCount": 200,
+              "spread": 120,
+              "speed": 65,
+              "duration": 250,
+              "fade": 0.8
+          }
+      },
+      {
+          "name": "Very low retrievability",
+          "conditions": {
+              "prop:r": "<= 0.30"
+          },
+          "pattern": {
+              "particleCount": 160,
+              "spread": 100,
+              "speed": 55,
+              "duration": 210,
+              "fade": 0.85
+          }
+      }
+  ]
+>>>>>>> ec1e16eb8eff6cd6167c7dd21465990a5f258ab0
 }

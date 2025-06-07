@@ -2,6 +2,11 @@
   "name": "Confetti Reinforcement",
   "mod": 1,
   "desc": "Triggers confetti bursts based on FSRS card conditions and review performance.",
+<<<<<<< HEAD
   "version": "1.1.0",
+=======
+  "version": "1.0.0",
+  "author": "Your Name",
+>>>>>>> ec1e16eb8eff6cd6167c7dd21465990a5f258ab0
   "url": "https://github.com/yourname/confetti-reinforcement"
 }
